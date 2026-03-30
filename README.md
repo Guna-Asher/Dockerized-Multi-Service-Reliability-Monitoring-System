@@ -172,7 +172,7 @@ Overall     99.8     Error Budget: 15% remaining
 
 ## Deployment Instructions (step-by-step docker-compose setup)
 
-1. Clone: `git clone <repo> &amp;&amp; cd docker-reliability-monitor`
+1. Clone: `git clone https://github.com/Guna-Asher/Dockerized-Multi-Service-Reliability-Monitoring-System &amp;&amp; cd docker-reliability-monitor`
 2. Volumes auto-mount: `logs/` and `reports/` persist data.
 3. Deploy: `docker compose up -d`
 4. Observe: `docker compose logs -f monitor-agent`
