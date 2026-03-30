@@ -1,9 +1,10 @@
 # Dockerized Multi-Service Reliability Monitoring System
 
-[![Docker](https://img.shields.io/badge/Docker-Production%20Ready-blue?logo=docker)](https://www.docker.com/)
-[![Python](https://img.shields.io/badge/Python-3.12-SRE%20Automation-green?logo=python)](https://www.python.org/)
-[![Monitoring](https://img.shields.io/badge/Monitoring-Self%20Healing-orange?logo=prometheus)](https://prometheus.io/)
-[![SRE Portfolio](https://img.shields.io/badge/SRE-Portfolio%20Project-red?logo=googlecloud)](https://sre.google/sre-book/table-of-contents/)
+![Docker](https://img.shields.io/badge/Docker-Containerized-blue)
+![Python](https://img.shields.io/badge/Python-3.12-green)
+![Monitoring](https://img.shields.io/badge/Monitoring-SRE-orange)
+![Reliability](https://img.shields.io/badge/Reliability-Self--Healing-red)
+![Portfolio Project](https://img.shields.io/badge/Project-SRE%20Portfolio-purple)
 
 ## Enterprise-Style Project Overview
 
