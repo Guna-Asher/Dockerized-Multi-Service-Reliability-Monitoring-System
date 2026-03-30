@@ -1,0 +1,8 @@
+{
+  "poll_interval": 60,
+  "max_restarts": 3,
+  "services": ["nginx", "redis", "flask-app"],
+  "report_interval": 10,
+  "health_timeout": 5
+}
+
