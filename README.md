@@ -175,10 +175,6 @@ Overall     99.8     Error Budget: 15% remaining
 ```
 
 
-
-## Deployment Instructions (step-by-step docker-compose setup)
-
-
 ## 🚀 Deployment Instructions (Step-by-Step Docker Compose Setup)
 
 Follow these steps to deploy the **Dockerized Multi-Service Reliability Monitoring System**.
