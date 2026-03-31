@@ -16,7 +16,7 @@ Designed as a **fresher SRE/DevOps portfolio demonstrator**, it showcases produc
 
 ## Architecture Diagram
 
-![Project Architecture](1.png)
+![Project Architecture](screenshots/5.png)
 
 ```
 +-----------------------------------+  
@@ -179,23 +179,110 @@ Overall     99.8     Error Budget: 15% remaining
 ## Deployment Instructions (step-by-step docker-compose setup)
 
 
-1. Clone: `git clone https://github.com/Guna-Asher/Dockerized-Multi-Service-Reliability-Monitoring-System`
-   `cd docker-reliability-monitor`
-3. Volumes auto-mount: `logs/` and `reports/` persist data.
-4. Deploy: `docker compose up -d`
-5. Observe: `docker compose logs -f monitor-agent`
-6. Chaos test: `docker compose stop nginx`
-7. Validate: `docker compose ps`, `cat logs/container_events.json`, `cat reports/reliability_summary.txt`
-8. Teardown: `docker compose down -v`
-====================================
-1. Clone: `git clone https://github.com/Guna-Asher/Dockerized-Multi-Service-Reliability-Monitoring-System &amp;&amp; cd docker-reliability-monitor`
-2. Volumes auto-mount: `logs/` and `reports/` persist data.
-3. Deploy: `docker compose up -d`
-4. Observe: `docker compose logs -f monitor-agent`
-5. Chaos test: `docker compose stop nginx`
-6. Validate: `docker compose ps` ![Live](1.png), `cat logs/container_events.json` ![Logs](3.png), `cat reports/reliability_summary.txt`
-7. Dashboard: `curl http://localhost:8080` ![API](2.png) 
-8. Teardown: `docker compose down -v`
+## 🚀 Deployment Instructions (Step-by-Step Docker Compose Setup)
+
+Follow these steps to deploy the **Dockerized Multi-Service Reliability Monitoring System**.
+
+---
+
+### 1️⃣ Clone the Repository
+
+```bash
+git clone https://github.com/Guna-Asher/Dockerized-Multi-Service-Reliability-Monitoring-System
+cd docker-reliability-monitor
+```
+
+---
+
+### 2️⃣ Persistent Volumes
+
+The following directories are automatically mounted and persist data across container restarts:
+
+- `logs/`
+- `reports/`
+
+---
+
+### 3️⃣ Deploy the Stack
+
+```bash
+docker compose up -d
+```
+
+---
+
+### 4️⃣ Observe Monitoring Logs
+
+```bash
+docker compose logs -f monitor-agent
+```
+
+---
+
+### 5️⃣ Run Chaos Test (Simulate Failure)
+
+Stop the **nginx** container to test resilience monitoring:
+
+```bash
+docker compose stop nginx
+```
+
+---
+
+### 6️⃣ Validate System Behavior
+
+Check container status:
+
+```bash
+docker compose ps
+```
+
+View captured container events:
+
+```bash
+cat logs/container_events.json
+```
+
+View generated reliability report:
+
+```bash
+cat reports/reliability_summary.txt
+```
+
+**Example outputs:**
+
+- Container status  
+  ![Live](screenshots/1.png)
+
+- Event logs  
+  ![Logs](screenshots/3.png)
+
+---
+
+### 7️⃣ Access Monitoring Dashboard API
+
+```bash
+curl http://localhost:8080
+```
+
+**Example API response:**
+
+![API](screenshots/2.png)
+
+---
+
+### 8️⃣ Teardown the Environment
+
+Stop and remove containers, networks, and volumes:
+
+```bash
+docker compose down -v
+```
+
+---
+
+✅ Deployment complete. Your reliability monitoring environment is now fully operational.
+
 
 ## Live Demo Screenshots
 
