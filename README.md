@@ -16,6 +16,8 @@ Designed as a **fresher SRE/DevOps portfolio demonstrator**, it showcases produc
 
 ## Architecture Diagram
 
+![Project Architecture](1.png)
+
 ```
 +-----------------------------------+  
 |        docker-compose.yml         |  
@@ -44,6 +46,7 @@ Designed as a **fresher SRE/DevOps portfolio demonstrator**, it showcases produc
                           | reports/reliability.txt  |    
                           +---------------------------+    
 ```
+
 
 ## Key Reliability Features
 
@@ -171,8 +174,11 @@ flask-app   99.5     2         12.1
 Overall     99.8     Error Budget: 15% remaining
 ```
 
+
+
 ## Deployment Instructions (step-by-step docker-compose setup)
 
+<<<<<<< HEAD
 1. Clone: `git clone https://github.com/Guna-Asher/Dockerized-Multi-Service-Reliability-Monitoring-System`
    `cd docker-reliability-monitor`
 3. Volumes auto-mount: `logs/` and `reports/` persist data.
@@ -181,6 +187,33 @@ Overall     99.8     Error Budget: 15% remaining
 6. Chaos test: `docker compose stop nginx`
 7. Validate: `docker compose ps`, `cat logs/container_events.json`, `cat reports/reliability_summary.txt`
 8. Teardown: `docker compose down -v`
+=======
+1. Clone: `git clone <repo> &amp;&amp; cd docker-reliability-monitor`
+2. Volumes auto-mount: `logs/` and `reports/` persist data.
+3. Deploy: `docker compose up -d`
+4. Observe: `docker compose logs -f monitor-agent`
+5. Chaos test: `docker compose stop nginx`
+6. Validate: `docker compose ps` ![Live](1.png), `cat logs/container_events.json` ![Logs](3.png), `cat reports/reliability_summary.txt`
+7. Dashboard: `curl http://localhost:8080` ![API](2.png) 
+8. Teardown: `docker compose down -v`
+
+## Live Demo Screenshots
+
+### 1️⃣ Project Structure
+![Project Structure](screenshots/5.png)
+
+### 2️⃣ Running Containers  
+![docker compose ps - Running Containers](screenshots/1.png)
+
+### 3️⃣ Flask Dashboard / Health Check
+![curl http://localhost:8080 - Flask Response](screenshots/2.png)
+
+![http://localhost:8080 - Web Response](screenshots/4.png)
+
+### 4️⃣ Container Event Logs (Live Monitoring)
+![logs/container_events.json - Real Incidents](screenshots/3.png)
+
+>>>>>>> 083514c (Work in progress: updating files)
 
 ## How Monitoring Agent Works Internally
 
