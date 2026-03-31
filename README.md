@@ -187,7 +187,7 @@ Overall     99.8     Error Budget: 15% remaining
 6. Chaos test: `docker compose stop nginx`
 7. Validate: `docker compose ps`, `cat logs/container_events.json`, `cat reports/reliability_summary.txt`
 8. Teardown: `docker compose down -v`
-=======
+
 1. Clone: `git clone https://github.com/Guna-Asher/Dockerized-Multi-Service-Reliability-Monitoring-System &amp;&amp; cd docker-reliability-monitor`
 2. Volumes auto-mount: `logs/` and `reports/` persist data.
 3. Deploy: `docker compose up -d`
