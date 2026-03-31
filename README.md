@@ -178,7 +178,7 @@ Overall     99.8     Error Budget: 15% remaining
 
 ## Deployment Instructions (step-by-step docker-compose setup)
 
-<<<<<<< HEAD
+
 1. Clone: `git clone https://github.com/Guna-Asher/Dockerized-Multi-Service-Reliability-Monitoring-System`
    `cd docker-reliability-monitor`
 3. Volumes auto-mount: `logs/` and `reports/` persist data.
@@ -213,7 +213,6 @@ Overall     99.8     Error Budget: 15% remaining
 ### 4️⃣ Container Event Logs (Live Monitoring)
 ![logs/container_events.json - Real Incidents](screenshots/3.png)
 
->>>>>>> 083514c (Work in progress: updating files)
 
 ## How Monitoring Agent Works Internally
 
